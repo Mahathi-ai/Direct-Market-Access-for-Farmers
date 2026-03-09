@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Farmer Username -->
+    <EditText
+        android:id="@+id/farmerUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Farmer Username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Farmer Password -->
+    <EditText
+        android:id="@+id/farmerPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Farmer Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/farmerUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Farmer Login Button -->
+    <Button
+        android:id="@+id/farmerLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as Farmer"
+        app:layout_constraintTop_toBottomOf="@id/farmerPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Buyer Username -->
+    <EditText
+        android:id="@+id/buyerUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Buyer Username"
+        app:layout_constraintTop_toBottomOf="@id/farmerLoginBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Buyer Password -->
+    <EditText
+        android:id="@+id/buyerPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Buyer Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/buyerUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Buyer Login Button -->
+    <Button
+        android:id="@+id/buyerLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as Buyer"
+        app:layout_constraintTop_toBottomOf="@id/buyerPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
